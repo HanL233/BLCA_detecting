@@ -8,7 +8,7 @@
 
 5. cat clinical.txt | perl -wlane 'chomp; if($F[0]=~/^#/){print "$_\tarctangent"}; if(-e "./RRBS/Advanced_Analysis/D-score/01Arctangent/$F[0].arctangent.fixedBin_500bp.bed.gz"){print "$_\t./RRBS/Advanced_Analysis/D-score/01Arctangent/$F[0].arctangent.fixedBin_500bp.bed.gz"}' > arctangent.list
 
-6. perl Arctangent_Matrix.pl arctangent.list ./ BLCA-SGYY.RRBS
+6. perl ./script/Arctangent_Matrix.pl arctangent.list ./ BLCA-SGYY.RRBS
 
 7. grep -E "Healthy|Primary" arctangent.list | cut -f 1,5 | sort | uniq > 02TenFoldCV/BLCA-SGYY.Training.Healthy_Primary.txt
 
