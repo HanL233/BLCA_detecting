@@ -2,8 +2,8 @@
 Detecting and Monitoring Bladder Cancer with Exfoliated Cells in Urine
 
 ## Preparation
-cd script <br />
 1. compile neccessary tools <br />
+cd script <br />
 gcc -Wall -g -o balance.plus tree_code/balance.plus.c -lm -I ./include/ <br />
 gcc -Wall -g -o fisher tree_code/fisher.c -lm -I ./include/ <br />
 gcc -Wall -g -o fisher tree_code/fisher.c -lm -I ./include/ <br />
