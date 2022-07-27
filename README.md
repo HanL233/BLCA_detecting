@@ -11,5 +11,5 @@ gcc -Wall -g -o fisher tree_code/fisher.c -lm -I ./include/ <br />
 3. add bedtools & pee into $PATH
 
 ## Processing
-Please see 00work.sh, an example of training data had been put in folder "data"
+Please see 00work.sh, an example of training data (used in step 9) had been put in folder "data", you don't need to go through the whole pipeline
 
