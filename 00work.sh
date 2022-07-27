@@ -1,4 +1,4 @@
-1. bedtools makewindows -b <(cat ./CaptureRegion/probe.sorted.merge.bed | perl -wlane 'print "$F[0]\t$F[1]\t$F[2]\t$F[0]:$F[1]-$F[2]"') -w 500 -i srcwinnum | perl -wlane 'chomp; if($.==1){print "#BinChr\tBinStart\tBinEnd\tCaptureRegion\tBinLength"} $len=$F[2]-$F[1]; print "$_\t$len"' > probe.sorted.merge.fixedBin_500bp.bed
+1. bedtools makewindows -b <(gzip -dc ./CaptureRegion/probe.sorted.merge.bed.gz | perl -wlane 'print "$F[0]\t$F[1]\t$F[2]\t$F[0]:$F[1]-$F[2]"') -w 500 -i srcwinnum | perl -wlane 'chomp; if($.==1){print "#BinChr\tBinStart\tBinEnd\tCaptureRegion\tBinLength"} $len=$F[2]-$F[1]; print "$_\t$len"' > probe.sorted.merge.fixedBin_500bp.bed
 
 2. cat clinical.txt | perl -wlane 'chomp; if($F[0]=~/^#/){print "$_\tcytosine_report"}; if(-e "./RRBS/Analysis/$F[0]/03.Methyl/$F[0].cytosine_report.txt.gz"){print "$_\t./RRBS/Analysis/$F[0]/03.Methyl/$F[0].cytosine_report.txt.gz"} if(-e "./RRBS/Analysis2/$F[0]/03.Methyl/$F[0].cytosine_report.txt.gz"){print "$_\t./RRBS/Analysis2/$F[0]/03.Methyl/$F[0].cytosine_report.txt.gz"}' > cytosine_report.list
 
