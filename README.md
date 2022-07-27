@@ -7,6 +7,6 @@ cd script <br />
 gcc -Wall -g -o balance.plus tree_code/balance.plus.c -lm -I ./include/ <br />
 gcc -Wall -g -o fisher tree_code/fisher.c -lm -I ./include/ <br />
 gcc -Wall -g -o fisher tree_code/fisher.c -lm -I ./include/ <br />
-2. edit the Perl scripts to replace default link of bedtools and anaconda2 pee <br />
+2. edit the Perl scripts to replace default paths of bedtools and anaconda2 pee <br />
 
 ##
