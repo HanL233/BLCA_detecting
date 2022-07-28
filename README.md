@@ -1,5 +1,7 @@
 # BLCA_detecting
 Detecting and Monitoring Bladder Cancer with Exfoliated Cells in Urine
+Author : lianghan@genomics.cn,  algorithm
+Author : lifuqiang@genomics.cn, pipeline
 
 ## Preparation
 1. compile neccessary tools <br />
